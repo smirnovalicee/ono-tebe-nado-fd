@@ -1,10 +1,170 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+   <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ 
+  <header>
+  <!-- 2. Меню (тег nav) -->
+  <nav class="main-menu">
+    <ul>
+      <li><a href="#about">Главная</a></li>
+      <li><a href="#lots">Посмотреть лоты</a></li>
+      <li><a href="#auction">об аукционе</a></li>
+    </ul>
+  </nav>
+
+<a href="/" class="logo">ОНО ТЕБЕ НАДО</a>
+
+  <!-- 3. Адрес (тег address) -->
+  <address>
+    <a href="tel:+99995555555">+9 995 555 5555</a><br>
+    <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
+     наб. Принсенграхт 263- 265, Амстердам
+  </address>
+</header>
+
+  
+
+  
+    <main>
+  <section class="cover">
+    <h1 class="cover__title">
+      <span>ОНО</span>
+      <span>ТЕБЕ</span>
+      <span>НАДО</span>
+    </h1>
+    <div class="cover__description">
+      <p class="cover__subline">АУКЦИОН ВЕЩЕЙ,В КОТОРЫЕ НИКТО НЕ ВЕРИЛ</p>    
+      <a href="#lots" class="cover__button">Сделать ставку</a>
+      </div>
+    </section>
+
+  <section class="lots">
+  <h2 class="lots__title">ЛОТЫ</h2>
+
+  <!-- Обертка стала списком <ul> -->
+  <ul class="lots__grid">
+    
+    <!-- Карточка 1 (Frame 1) -->
+    <li class="lots__item">
+      <a href="#" class="lots__link">
+        <article class="lot-card">
+          <img src="img/lot1.jpg" alt="Фильм режиссёра" class="lot-card__img">
+          <div class="lot-card__overlay"></div>
+          
+          <div class="lot-card__content">
+            <h3 class="lot-card__heading">ФИЛЬМ РЕЖИССЁРА, КОТОРЫЙ БРОСИЛ КИНОШКОЛУ</h3>
+            <p class="lot-card__desc">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+          </div>
+        </article>
+      </a>
+    </li>
+
+    <!-- Карточка 2 (Frame 2) -->
+    <li class="lots__item">
+      <a href="#" class="lots__link">
+        <article class="lot-card">
+          <img src="img/lot2.jpg" alt="Книга" class="lot-card__img">
+          <div class="lot-card__overlay"></div>
+          
+          <div class="lot-card__content">
+            <h3 class="lot-card__heading">КНИГА, ГДЕ ОПИСАН ОДИН СКУЧНЫЙ ДЕНЬ ИЗ ЖИЗНИ РЕКЛАМНОГО АГЕНТА</h3>
+            <p class="lot-card__desc">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года...</p>
+          </div>
+        </article>
+      </a>
+    </li>
+
+    <!-- Карточка 3 (Frame 3) -->
+    <li class="lots__item">
+      <a href="#" class="lots__link">
+        <article class="lot-card">
+          <img src="img/lot3.jpg" alt="Картина" class="lot-card__img">
+          <div class="lot-card__overlay"></div>
+          
+          <div class="lot-card__content">
+            <h3 class="lot-card__heading">КАРТИНА, КОТОРУЮ ПОВТОРИТ ДАЖЕ 5-ЛЕТНИЙ СЫН МАМИНОЙ ПОДРУГИ</h3>
+            <p class="lot-card__desc">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...</p>
+          </div>
+        </article>
+      </a>
+    </li>
+
+  </ul>
+
+  <!-- Блок "посмотреть больше" -->
+  <div class="lots__more">
+    <a href="#" class="lots__more-link">посмотреть больше</a>
+    <div class="lots__line"></div>
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="about__container">
+    
+    <!-- Левая колонка (Layer: logo-column) -->
+    <div class="about__logo-column">
+      <!-- Вставляем картинку логотипа. Замените src на путь к вашей картинке -->
+      <img src="img/logo-circle.png" alt="Логотип Оно тебе надо" class="about__logo-img">
+    </div>
+
+    <!-- Правая колонка (Layer: about-column) -->
+    <div class="about__about-column">
+      <h2 class="about__title">ОБ АУКЦИОНЕ</h2>
+      
+      <!-- Блок с текстом (Layer: description-block) -->
+      <div class="about__description-block">
+        <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+        
+        <p>Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах разорённые критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда-то в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ </main>
+
+  
+    <footer class="footer">
+  <div class="footer__container">
+    
+    <!-- 1. Контакты (Layer: contacts) -->
+    <address class="footer__contacts">
+      <a href="tel:+99995555555">+9 999 555 5555</a>
+
+      <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+
+      наб. Принсенграхт 263-265,
+Амстердам
+    </address>
+
+    <!-- 2. Меню (Layer: menu) -->
+    <nav class="footer__menu">
+      <ul>
+        <li><a href="#about">главная</a></li>
+        <li><a href="#lots">посмотреть лоты</a></li>
+        <li><a href="#auction">об аукционе</a></li>
+      </ul>
+    </nav>
+
+    <!-- 3. Соцсети (Layer: socials) -->
+    <div class="footer__socials">
+      <!-- Вставляем картинки иконок. Замените пути на свои -->
+      <a href="#" aria-label="YouTube"><img src="img/youtube.svg" alt="YouTube"></a>
+      <a href="#" aria-label="VK"><img src="img/vk.svg" alt="VK"></a>
+      <a href="#" aria-label="Pinterest"><img src="img/pinterest.svg" alt="Pinterest"></a>
+    </div>
+
+  </div>
+   </footer>
+  
+</body>
 </html>
