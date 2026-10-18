@@ -1,1 +1,127 @@
 /* место для вашего кода */
+
+header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr; 
+  align-items:center;
+  width: 1100px;
+  height: 293px;
+  margin:0 auto;
+  }
+.main-menu{
+  grid-column:1;
+  justify-self: start;
+  }
+
+  .logo_header{
+  grid-column:2;
+  justify-self: center;
+  display: block;
+  width: 124px;
+  height: 95px;
+  }
+
+  address{
+  grid-column:3;
+  justify-self: end;
+  text-align: right;
+ }
+  
+  
+     
+
+.cover{
+
+}
+.cover__description{
+
+}
+.cover__subline{
+
+}
+.cover__button{
+
+}
+
+
+.lots{
+
+}
+.lots__title{
+
+}
+.lots__grid{
+
+}
+/*задать стиль ячейке сетки,ширину,отступы,границы*/
+.lots__item{
+
+}
+/*делает кликабельной всю карточку целиком*/
+.lots__link{
+  
+
+}
+.lot-card{
+
+}
+/*делает полупрозрачный слой*/
+.lot-card__overlay{
+
+}
+/*контейнер для текста*/
+.lot-card__content{
+
+}
+/*для названий лотов*/
+.lot-card__heading{
+
+}
+/*для текста в лотах*/
+.lot-card__desc{
+
+}
+.lots__more{
+
+}
+.lots__more-link{
+
+}
+.lots__line{
+
+}
+.about{
+
+}
+.about__container{
+
+}
+.about__logo-column{
+
+}
+.about__about-column{
+
+}
+/*об аукционе*/
+.about__title{
+
+}
+/*блок с текстом*/
+.about__description-block{
+
+}
+.footer{
+
+}
+.footer__container{
+
+}
+.footer__contacts{
+
+}
+.footer__menu{
+
+}
+.footer__socials{
+
+}
