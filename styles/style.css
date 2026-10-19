@@ -7,15 +7,17 @@ header {
   margin:0 auto;
   font-weight: normal;
   font-size:18px;
+  padding:92px 50px 0 50px;
+  }
+  .main-menu{
+    
+    
   }
 .main-menu ul{
   display:flex;
-  
   list-style:none;
-  padding:50 133 50 138;
+   }
   
-  
-  }
   .main-menu li:first-child a{
     text-decoration: none;
   }
@@ -31,6 +33,7 @@ margin-right: 13px;
   .main-menu li{
     display: flex;
     align-items: center;
+    
   }
   .main-menu a {
 text-decoration: none;
@@ -38,19 +41,28 @@ color: inherit;
   }
 
   .logo_header{
+    width: 148px;
+    height: 105px;;
+    display: block;
   
   
-  display: block;
-  width: 124px;
-  height: 95px;
   }
 
+  
   address{
   
-  justify-self: end;
-  text-align: right;
+  flex-direction: column;
+  align-items: flex-start;
+    justify-self:end;
+  font-style: normal;
+  max-width:240px;
+  display: flex;
+}
+ .header__adress{
+  align-items: flex-start;
+  max-width:240px;
  }
-  .cover{
+.cover{
   
 }
 .cover_card_img{
