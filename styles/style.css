@@ -2,14 +2,20 @@
 
 header {
   display: grid;
-  grid-template-columns: 1fr min-content 1fr; 
   align-items:center;
+  grid-template-columns: 1fr min-content 1fr; 
+  
+  
+  
   margin:0 auto;
   font-weight: normal;
   font-size:18px;
   padding:92px 50px 0 50px;
+  
   }
+  
   .main-menu{
+    
     
     
   }
@@ -44,8 +50,6 @@ color: inherit;
     width: 148px;
     height: 105px;;
     display: block;
-  
-  
   }
 
   
@@ -53,7 +57,7 @@ color: inherit;
   
   flex-direction: column;
   align-items: flex-start;
-    justify-self:end;
+  justify-self:end;
   font-style: normal;
   max-width:240px;
   display: flex;
@@ -62,22 +66,49 @@ color: inherit;
   align-items: flex-start;
   max-width:240px;
  }
-.cover{
-  
+
+ .cover{
+  display: flex;
+position:relative;
+min-height:757px;
+}
+.overlay{
+  position: absolute;
+
 }
 .cover_card_img{
   width: 1100px;
-  height: 757px;
+  height: 757px;}
+ .cover__title{
+
+ }
+ .cover__title-tebe{
+
+ } 
+.cover__title-nado{
+  
+}
+
+h1{
+  text-transform:uppercase;
+}
+.cover__title{
+  z-index: 1;
 }
 .cover__description{
 
 }
 .cover__subline{
 
+
 }
 .cover__button{
 
 }
+
+
+
+
 
 
 .lots{
