@@ -5,17 +5,17 @@ header {
   align-items:center;
   grid-template-columns: 1fr min-content 1fr; 
   
-  
-  
   margin:0 auto;
   font-weight: normal;
   font-size:18px;
   padding:92px 50px 0 50px;
+  width: 1100px;
+  height: 293px;
   
   }
   
   .main-menu{
-    
+   
     
     
   }
@@ -27,6 +27,7 @@ header {
   .main-menu li:first-child a{
     text-decoration: none;
   }
+  
   .main-menu li:not(:first-child)::before{
 content:"◦";
 display: inline-block;
@@ -35,10 +36,12 @@ margin-right: 0/5em;
 color:inherit;
 margin-left: 13px;
 margin-right: 13px;
+
   }
   .main-menu li{
     display: flex;
     align-items: center;
+  
     
   }
   .main-menu a {
@@ -61,6 +64,7 @@ color: inherit;
   font-style: normal;
   max-width:240px;
   display: flex;
+  
 }
  .header__adress{
   align-items: flex-start;
@@ -68,34 +72,52 @@ color: inherit;
  }
 
  .cover{
-  display: flex;
-position:relative;
+  display: grid;
 min-height:757px;
+position: relative;
+}
+.cover__title{
+  text-transform:uppercase;
+  position: relative;
+  color:white;
+ 
 }
 .overlay{
   position: absolute;
+  
 
 }
 .cover_card_img{
+  position: absolute;
   width: 1100px;
-  height: 757px;}
- .cover__title{
+  height: 757px;
+  
 
  }
+ .title__ono_tebe_ono{
+  position: relative;
+  z-index: 1;
+  font-size: 100px;
+  
+  }
  .cover__title-tebe{
 
  } 
 .cover__title-nado{
-  
+
 }
 
 h1{
   text-transform:uppercase;
 }
-.cover__title{
-  z-index: 1;
-}
+
+
 .cover__description{
+  position: relative;
+  width: 1100px;
+  height: 51px;
+  font-size: 22px;
+
 
 }
 .cover__subline{
@@ -112,13 +134,23 @@ h1{
 
 
 .lots{
+  width: 1052px;
+  height: 723px;
+display: grid;
+grid-template-columns: 596px 596px 596px 596px;
+grid-template-rows: 334px 334px 334px 334px;
 
+}
+
+.lot-card__img{
+ width: 334px;
+ height: 596px;
 }
 .lots__title{
 
 }
 .lots__grid{
-
+display: grid;
 }
 /*задать стиль ячейке сетки,ширину,отступы,границы*/
 .lots__item{
@@ -158,13 +190,20 @@ h1{
 
 }
 .about{
+  width: 1052px;
+  height: 595px;
 
+}
+.about__logo-img{
+  width: 240px;
+  height: 240px;
 }
 .about__container{
 
 }
 .about__logo-column{
-
+width: 693px;
+height: 449px;
 }
 .about__about-column{
 
@@ -178,7 +217,20 @@ h1{
 
 }
 .footer{
-
+width: 1100px;
+height: 180px;
+}
+.youtub{
+  width: 48px;
+  height: 48px;
+}
+.vk{
+  width: 48px;
+  height: 48px;
+}
+.pinterest{
+  width: 48px;
+  height: 48px;
 }
 .footer__container{
 
