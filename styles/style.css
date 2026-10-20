@@ -151,6 +151,7 @@ grid-template-rows: 334px 334px 334px 334px;
 }
 .lots__grid{
 display: flex;
+flex-direction: row-reverse;
 }
 /*задать стиль ячейке сетки,ширину,отступы,границы*/
 .lots__item{
