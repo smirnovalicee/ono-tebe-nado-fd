@@ -1,34 +1,71 @@
 /* место для вашего кода */
 
+
 .header {
   display: grid;
   align-items:center;
   grid-template-columns: 1fr min-content 1fr; 
-  
   margin:0 auto;
   font-weight: normal;
   font-size:18px;
   padding:92px 50px 96px 50px;
   width: 1100px;
-  height: 293px;
+  height: 293px;}
+ 
   
-  }
+ .main-menu{
   
-  .main-menu{
-   
-    
-    
-  }
-.header__links-list{
+ }
+
+
+ .header__links-list{
   display:flex;
   list-style:none;
-   }
-  .header__link_active{
-    border-bottom: none;
-  }  
+     width: 391,4px;
+  height: 22px;
+  gap:13px;
+ align-items: flex-end;
+  margin-right:43.1px;
+   margin-left:-20.3px;
+font-family: sans-serif;
+font-weight: 400;
+font-size: 18px
+ }
+
+
+  .header__links-list-item {
+   font-size: 18px;
+   list-style: circle;
+   padding-left: 4px;
+   margin-left: auto;
+
+  }
+
+    .header__links-list-item_no-bullit{
+    list-style: none;
+    padding-left: 0;
+  }
+
   .header__link{
     border-bottom: 1px solid;
+    text-decoration: none;
+    font-weight: 400;
+font-size: 18px;
+color: #000;
+
+  
   }
+.header__link_active{
+    border-bottom: none;
+    
+  }  
+  
+
+  
+   
+   
+   
+ 
   
  
 
@@ -40,32 +77,43 @@
 
   
   .contakts__header{
-  
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-self:end;
   font-style: normal;
-  display: flex;
+  
   display:block;
-  width: 240px;
+   max-width: 240px;
+   width: 100%;
+
 
   
 }
+
+.contakt{
+  display: block;
+  font-weight: 400;
+font-size: 18px;
+line-height: 135%;
+}
+
+
 
 
  .cover{
   display: flex;
 min-height:757px;
 position: relative;
+background-image: url(/images/cover.jpg);
+flex-direction: column;
+padding:165px 50px 50px 50px;
 }
-.cover__title{
-  text-transform:uppercase;
-  position: relative;
-  color:white;
- 
-}
+
 .overlay{
   position: absolute;
+  background: #00000041;
+inset: 0;
   
 
 }
@@ -76,17 +124,32 @@ position: relative;
   
 
  }
- .title__ono_tebe_ono{
+ .title__ono_tebe_nado{
+ display: grid;
   position: relative;
   z-index: 1;
-  font-size: 100px;
+font-size: 100px;
+line-height: 115%;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+color: #fff;
+gap:10px;
+margin-bottom: 106px;
   
   }
+  .cover__title-ono{
+display: block;
+margin-top: 20px;
+margin-right: -0.3em;
+  }
+
+
  .cover__title-tebe{
+  text-align: center;
 
  } 
 .cover__title-nado{
-
+text-align: right;
 }
 
 h1{
@@ -95,11 +158,10 @@ h1{
 
 
 .cover__description{
+  display: flex;
   position: relative;
-  width: 1100px;
-  height: 51px;
   font-size: 22px;
-
+color: #fff;
 
 }
 .cover__subline{
@@ -116,12 +178,12 @@ h1{
 
 
 .lots{
-  width: 1052px;
-  height: 723px;
+  padding: 180px 24px 120px 24px;
+  
 display: flex;
-flex-direction: row;
-flex-direction:space-evenly;
-padding: 180px 24px 120px 24px;
+flex-direction:column;
+
+
 
 
 }
@@ -130,7 +192,7 @@ padding: 180px 24px 120px 24px;
  width: 334px;
  height: 596px;
  padding:74px 0 30px 0;
- margin-left: 24px;
+
 }
 .lots__title{
   width: 121px;
@@ -141,6 +203,7 @@ padding: 180px 24px 120px 24px;
    display: flex;
 flex-direction: row;
 justify-content:space-around;
+list-style: none;
 
 }
 /*задать стиль ячейке сетки,ширину,отступы,границы*/
@@ -182,9 +245,8 @@ justify-content:space-around;
 }
 .about{
   width: 1052px;
-  height: 595px;
   padding: 0;
-  display: flex;
+  
   flex-direction: row;
 
 }
@@ -193,7 +255,7 @@ justify-content:space-around;
   height: 240px;
 }
 .about__container{
-
+display: flex;
 }
 .about__logo-column{
 width: 693px;
