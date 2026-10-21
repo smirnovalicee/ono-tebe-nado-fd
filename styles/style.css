@@ -1,6 +1,6 @@
 /* место для вашего кода */
 
-header {
+.header {
   display: grid;
   align-items:center;
   grid-template-columns: 1fr min-content 1fr; 
@@ -19,35 +19,18 @@ header {
     
     
   }
-.main-menu ul{
+.header__links-list{
   display:flex;
   list-style:none;
    }
-  
-  .main-menu li:first-child a{
-    text-decoration: none;
+  .header__link_active{
+    border-bottom: none;
+  }  
+  .header__link{
+    border-bottom: 1px solid;
   }
   
-  .main-menu li:not(:first-child)::before{
-content:"◦";
-display: inline-block;
-width: 0/5em;
-margin-right: 0/5em;
-color:inherit;
-margin-left: 13px;
-margin-right: 13px;
-
-  }
-  .main-menu li{
-    display: flex;
-    align-items: center;
-  
-    
-  }
-  .main-menu a {
-text-decoration: none;
-color: inherit;
-  }
+ 
 
   .logo_header{
     width: 148px;
@@ -62,9 +45,10 @@ color: inherit;
   align-items: flex-start;
   justify-self:end;
   font-style: normal;
-  max-width:240px;
   display: flex;
   display:block;
+  width: 240px;
+
   
 }
 
