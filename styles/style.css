@@ -108,6 +108,8 @@ position: relative;
 background-image: url(/images/cover.jpg);
 flex-direction: column;
 padding:165px 50px 50px 50px;
+object-fit: cover;
+object-position: center;
 }
 
 .overlay{
@@ -141,20 +143,25 @@ margin-bottom: 106px;
 display: block;
 margin-top: 20px;
 margin-right: -0.3em;
+  display:inline-block;
+    transform:translateY(-11px)
+ 
   }
 
 
  .cover__title-tebe{
   text-align: center;
+  display:inline-block;
+   transform: translateX(20px)
 
  } 
 .cover__title-nado{
 text-align: right;
+ display:inline-block;
+  transform:translateX(27px);
 }
 
-h1{
-  text-transform:uppercase;
-}
+
 
 
 .cover__description{
@@ -162,14 +169,38 @@ h1{
   position: relative;
   font-size: 22px;
 color: #fff;
+text-transform:uppercase;
+ align-items: center;
+ gap:75px;
 
 }
 .cover__subline{
-
-
+font-weight: 400;
+font-size: 22px;
+line-height: 127%;
+text-transform: uppercase;
+color: #fff;
+white-space: nowrap;
+flex-shrink:0;
+width: 670px;
+margin:0;
+letter-spacing: 1.1px;
+ word-spacing:10px;
 }
 .cover__button{
+border: 1px solid #fff;
+width: 256px;
+height: 51px;
 
+background: transparent;
+
+
+
+font-weight: 400;
+font-size: 22px;
+text-align: center;
+text-transform: uppercase;
+color:#fff;
 }
 
 
@@ -178,71 +209,109 @@ color: #fff;
 
 
 .lots{
+  display: flex;
+  flex-direction:column;
   padding: 180px 24px 120px 24px;
-  
-display: flex;
-flex-direction:column;
+  width: 1052px;
+  height: 723px;
 
+}
+.lots__title{
+  width: 121px;
+  height: 47px;
+  margin-bottom: 27px;
+}
 
-
-
+.lot-card__overlay{
+  position: absolute;
+  inline-size: 0;
+   background: #00000041;
 }
 
 .lot-card__img{
  width: 334px;
  height: 596px;
  padding:74px 0 30px 0;
+background-image: url(/images/card-lot-01.jpg);
+background-size: cover;
+background-position: center;
+}
+.lot-card__heading_1{
+  width: 254px;
+  height: 82px;
+  font-weight: 700;
+font-size: 22px;
+
+  
+}
+.lot-card__heading_2{
+width: 254px;
+height:110px;
+font-weight: 700;
+font-size: 22px;
 
 }
-.lots__title{
-  width: 121px;
-  height: 47px;
+
+.lot-card__heading_3{
+  width: 254px;
+height:110px;
+}
+
+.lot-card__desc_1{
+width: 254px;
+height: 144px;
+}
+.lot-card__desc_2{
+width: 254px;
+height: 360px;
 
 }
+.lot-card__desc_3{
+width: 254px;
+height: 264px;
+}
+
+.lot-card__img_2{
+  width: 334px;
+ height: 596px;
+ padding:74px 0 30px 0;
+background-image: url(/images/card-lot-02.jpg);
+background-size: cover;
+background-position: center;
+}
+
+.lot-card__img_3{
+ width: 334px;
+ height: 596px;
+ padding:74px 0 30px 0;
+background-image: url(/images/card-lot-03.jpg);
+background-size: cover;
+background-position: center;
+
+}
+
+
 .lots__grid{
    display: flex;
 flex-direction: row;
 justify-content:space-around;
 list-style: none;
+gap:25px;
+
 
 }
 /*задать стиль ячейке сетки,ширину,отступы,границы*/
 .lots__item{
- 
-}
-/*делает кликабельной всю карточку целиком*/
-.lots__link{
-  
+ width: 334px;
+ height: 596px;
 
 }
-.lot-card{
 
-}
-/*делает полупрозрачный слой*/
-.lot-card__overlay{
 
-}
-/*контейнер для текста*/
-.lot-card__content{
 
-}
-/*для названий лотов*/
-.lot-card__heading{
 
-}
-/*для текста в лотах*/
-.lot-card__desc{
 
-}
-.lots__more{
 
-}
-.lots__more-link{
-
-}
-.lots__line{
-
-}
 .about{
   width: 1052px;
   padding: 0;
