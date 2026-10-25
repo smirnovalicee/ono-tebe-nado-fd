@@ -9,7 +9,7 @@
   font-size: 18px;
   padding: 92px 50px 96px 50px;
   width: 1100px;
-  height: 293px;
+  
 }
 
 .main-menu {
@@ -63,21 +63,23 @@
   justify-self: end;
   font-style: normal;
 
-  
   max-width: 240px;
   width: 100%;
 }
-
+/*общие для контактов шапка и футер*/
 .contakt {
   display: block;
   font-weight: 400;
   font-size: 18px;
   line-height: 135%;
 }
+.contact_none {
+  text-decoration: none;
+}
 
 .cover {
   display: flex;
-  min-height: 757px;
+ 
   position: relative;
   background-image: url(/images/cover.jpg);
   flex-direction: column;
@@ -87,13 +89,14 @@
   background-repeat: no-repeat;
 
   background-position: center;
+  z-index: 1;
 }
 
 .overlay {
   position: absolute;
-  background: #0000006d;
+  background: #0000008d;
   inset: 0;
-  z-index: 0;
+  z-index: 2;
 }
 
 .title__ono_tebe_nado {
@@ -107,51 +110,26 @@
   color: #fff;
   gap: 10px;
   margin-bottom: 106px;
+  z-index: 3;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }
 .cover__title-ono {
   display: block;
   margin-top: 20px;
   margin-right: -0.3em;
-  
   transform: translateY(-18px);
-  z-index: 1;
-
-  font-size: 100px;
-  line-height: 115%;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: #fff;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
 }
 
 .cover__title-tebe {
   text-align: center;
   display: inline-block;
   transform: translateX(20px);
-  z-index: 1;
-
-  font-size: 100px;
-  line-height: 115%;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: #fff;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
 }
 .cover__title-nado {
   text-align: right;
   display: inline-block;
   transform: translateX(27px);
-  z-index: 1;
-
-  font-size: 100px;
-  line-height: 115%;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: #fff;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
 }
 
 .cover__description {
@@ -162,6 +140,7 @@
   text-transform: uppercase;
   align-items: center;
   gap: 75px;
+  z-index: 3;
 }
 .cover__subline {
   font-weight: 400;
@@ -190,6 +169,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  z-index: 3;
 }
 
 .lots {
@@ -197,7 +177,7 @@
   flex-direction: column;
   margin: 180px 24px 120px 24px;
   width: 1052px;
-  height: 723px;
+ 
 }
 .lots__title {
   width: 121px;
@@ -209,30 +189,11 @@
   color: #000;
   display: inline-block;
   transform: translateX(38px);
-}
-
-.lot-card__overlay {
-  position: absolute;
-  inset: 0;
-  background: #00000092;
   z-index: 1;
 }
 
-.lot-card__img {
-  width: 100%;
-  height: 100%;
-
-  background-image: url(/images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.lot-card__heading_1,
-.lot-card__heading_2,
-.lot-card__heading_3 {
-  z-index: 1;
+.lot-card__heading {
+  z-index: 3;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
@@ -241,44 +202,16 @@
   text-transform: uppercase;
   color: #fff;
   font-family: "Raleway", sans-serif;
-  
 }
 
-.lot-card__desc_1,
-.lot-card__desc_2,
-.lot-card__desc_3 {
+.lot-card__desc {
   margin-top: auto;
   color: #fff;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
-  z-index: 1;
+  z-index: 3;
   font-family: "Raleway", sans-serif;
-  
-}
-
-.lot-card__img_2 {
-  width: 100%;
-  height: 100%;
-
-  background-image: url(/images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.lot-card__img_3 {
-  width: 100%;
-  height: 100%;
-
-  background-image: url(/images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .lots__grid {
@@ -288,7 +221,7 @@
   list-style: none;
   gap: 25px;
 }
-/*задать стиль ячейке сетки,ширину,отступы,границы*/
+
 .lots__item {
   width: 334px;
   height: 596px;
@@ -296,10 +229,31 @@
 .lot-card {
   height: 100%;
   position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
+
+.lot_card_children {
+  background-image: url(../images/card-lot-01.jpg);
+  z-index: 1;
+}
+
+.lot_card_book {
+  background-image: url(../images/card-lot-02.jpg);
+  z-index: 1;
+}
+
+.lot_card_abstraction {
+  background-image: url(../images/card-lot-03.jpg);
+  z-index: 1;
+}
+
 .lot-card__content {
   position: absolute;
-  top: 0; /* Прижимаем к самому верху карточки */
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -314,8 +268,10 @@
   font-size: 20px;
   color: #000;
   width: 191px;
-  display: inline-block;
+  display: inline;
   text-decoration: none;
+  
+
 }
 .lots__more {
   padding: 30px 0 0 40px;
@@ -328,12 +284,11 @@
 
 .about {
   width: 1052px;
-  height: 595px;
-  
+  margin-top: 120px;
+
   flex-direction: row;
   padding: 25px 0 0 47px;
 }
-
 
 .about__container {
   display: grid;
@@ -352,7 +307,7 @@
   position: relative;
   align-self: flex-start;
   transform: translateX(24px);
-  
+
   top: 9px;
 }
 .about__logo-img {
@@ -388,32 +343,26 @@
   font-size: 20px;
   line-height: 120%;
   color: #000;
-  
+
   font-family: "Raleway", sans-serif;
 }
 
-.footer__addres {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 135%;
-  color: #000;
-}
 
-.footer__container {
+
+.footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 1100px;
-  height: 180px;
   padding: 0 50px 82px 50px;
-  margin-top: 180px;
+  padding-top: 180px;
+  
 }
 
-.footer__contakts {
+.footer__contacts {
   display: flex;
   flex-direction: column;
   justify-self: start;
   font-style: normal;
-  
   max-width: 264px;
   width: 100%;
   font-family: "Raleway", sans-serif;
@@ -422,6 +371,11 @@
   line-height: 135%;
   color: #000;
 }
+
+.footer__none{
+  text-decoration: none;
+}
+
 .footer__links {
   display: flex;
   flex-direction: column;
@@ -433,9 +387,7 @@
   text-align: center;
   color: #000;
 }
-.footer__underline {
-  text-decoration: none;
-}
+
 .footer__socials {
   display: flex;
   flex-direction: row;
