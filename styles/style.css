@@ -101,7 +101,6 @@
 .title__ono_tebe_nado {
   display: grid;
   position: relative;
-  z-index: 1;
   font-size: 100px;
   line-height: 115%;
   letter-spacing: 0.3em;
@@ -345,16 +344,14 @@
 }
 
 .footer {
- width: 1100px;
- margin-top: 180px;
+  width: 1100px;
 }
 
-.footer_grid{
-    display: grid;
+.footer_grid {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
- width: 1100px;
-  padding: 180px 50px 82px 50px;
-   margin-top: 180px;
+  width: 1100px;
+  padding: 160px 50px 82px 50px;
 }
 .footer__contacts {
   display: flex;
