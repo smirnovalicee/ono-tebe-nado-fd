@@ -1,4 +1,3 @@
-
 /*папку стилей не могу переименовать,
 тесты на гит хабе не пропускают,а папку
 глобэл перенесла в папку стайлес .*/
@@ -338,7 +337,6 @@
 
 .footer {
   width: 1100px;
- 
 }
 
 .footer_grid {
@@ -367,7 +365,6 @@
   text-align: center;
   font-weight: 400;
   font-size: 18px;
-  text-align: center;
   color: #000;
 }
 
