@@ -1,6 +1,3 @@
-/*папку стилей не могу переименовать,
-тесты на гит хабе не пропускают,а папку
-глобэл перенесла в папку стайлес .*/
 .header {
   display: grid;
   align-items: center;
@@ -207,12 +204,9 @@
   line-height: 120%;
   z-index: 3;
   font-family: "Raleway", sans-serif;
-  
- 
- 
 }
 
-.lots__link{
+.lots__link {
   text-decoration: none;
 }
 
@@ -255,12 +249,11 @@
 }
 
 .lot-card__content {
-  display: flex;
   width: 100%;
-  
+  flex:1;
   box-sizing: border-box;
   padding: 48px 40px 48px 40px;
-  z-index: 2; /* Чтобы текст был поверх картинки и оверлея */
+  z-index: 2;
   display: flex;
   flex-direction: column;
 }
