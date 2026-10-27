@@ -207,6 +207,13 @@
   line-height: 120%;
   z-index: 3;
   font-family: "Raleway", sans-serif;
+  
+ 
+ 
+}
+
+.lots__link{
+  text-decoration: none;
 }
 
 .lots__grid {
@@ -223,7 +230,7 @@
 }
 
 .lot-card {
-  height: 596px;
+  min-height: 596px;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -248,9 +255,9 @@
 }
 
 .lot-card__content {
-  left: 0;
+  display: flex;
   width: 100%;
-  height: 100%;
+  
   box-sizing: border-box;
   padding: 48px 40px 48px 40px;
   z-index: 2; /* Чтобы текст был поверх картинки и оверлея */
